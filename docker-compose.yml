@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  shadowsocks:
+    image: shadowsocks/shadowsocks-libev:v3.3.5
+    ports:
+      - "8399:8388/tcp"
+      - "8399:8388/udp"
+    environment:
+      - METHOD=aes-256-gcm
+      - PASSWORD=$PASSWORD
+      - DNS_ADDRS=$DNS_ADDRS
+    restart: always
