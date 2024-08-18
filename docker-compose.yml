@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3'
 
 services:
   shadowsocks:
@@ -7,7 +7,7 @@ services:
       - "8399:8388/tcp"
       - "8399:8388/udp"
     environment:
-      - METHOD=aes-256-gcm
-      - PASSWORD=$PASSWORD
-      - DNS_ADDRS=$DNS_ADDRS
+      METHOD: aes-256-gcm
+      PASSWORD: ${PASSWORD}
+      DNS_ADDRS: ${DNS_ADDRS}
     restart: always
