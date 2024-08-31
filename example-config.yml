@@ -1,0 +1,10 @@
+- name: my-proxy1
+  password: my-pass1
+  method: aes-256-gcm
+  dns_addrs: 8.8.8.8,8.8.4.4
+  port: 8388
+- name: my-proxy2
+  password: my-pass2
+  method: aes-256-gcm
+  dns_addrs: 8.8.8.8,8.8.4.4
+  port: 8389
